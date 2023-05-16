@@ -22,32 +22,35 @@ def FilesInFolderFullPath(SourceFolder):
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-with codecs.open(ResourceDir + "createSam\大叔動作.txt", 'r+', encoding='utf-8') as tf:
+# replace "createSam\大叔動作.txt" with os.path.join("createSam", "大叔動作.txt") and so on for the other files.
+
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔動作.txt"), 'r+', encoding='utf-8') as tf:
     大叔動作 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔場景.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔場景.txt"), 'r+', encoding='utf-8') as tf:
     大叔場景 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔職業.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔職業.txt"), 'r+', encoding='utf-8') as tf:
     大叔職業 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔背景.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔背景.txt"), 'r+', encoding='utf-8') as tf:
     大叔背景 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔純色.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔純色.txt"), 'r+', encoding='utf-8') as tf:
     大叔純色 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔魔法.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔魔法.txt"), 'r+', encoding='utf-8') as tf:
     大叔魔法 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔皮膚.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔皮膚.txt"), 'r+', encoding='utf-8') as tf:
     大叔皮膚 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔頭髮.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔頭髮.txt"), 'r+', encoding='utf-8') as tf:
     大叔頭髮 = [line.rstrip() for line in tf]
 
-with codecs.open(ResourceDir + "createSam\大叔眼睛.txt", 'r+', encoding='utf-8') as tf:
+with codecs.open(os.path.join(ResourceDir, "createSam", "大叔眼睛.txt"), 'r+', encoding='utf-8') as tf:
     大叔眼睛 = [line.rstrip() for line in tf]
+
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ResultACDoncept = ["No","Random"]
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
